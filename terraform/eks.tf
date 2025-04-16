@@ -172,7 +172,8 @@ module "eks" {
   access_entries = {
     example = {
       kubernetes_groups = []
-      principal_arn     = "arn:aws:iam::966117271938:role/my-role"
+      #principal_arn     = "arn:aws:iam::966117271938:role/my-role"
+      principal_arn     = "arn:aws:iam::075408398052:user/github-actions-user"
 
       policy_associations = {
         example = {
